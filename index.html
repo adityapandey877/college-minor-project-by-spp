@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweetShop</title>
+    <style>
+        /* Reset and Body Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            overflow-x: hidden; /* Prevent horizontal overflow */
+        }
+
+        /* Header Styling */
+        header {
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #ff5722;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        /* Navbar Styling */
+        nav {
+            width: 100%;
+            background-color: #673ab7;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        nav form {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #search {
+            width: 70%;
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        #search-btn {
+            width: 20%;
+            height: 40px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        #search-btn:hover {
+            background-color: #45a049;
+        }
+        #menu-table {
+            width: 100%;
+            margin-top: 10px;
+        }
+        #menu-item {
+            text-align: center;
+            padding: 10px 0;
+            background-color: white;
+            border-radius: 5px;
+            margin: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        #menu-item a {
+            text-decoration: none;
+            color: #673ab7;
+            font-size: 18px;
+            font-weight: bold;
+            display: block;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        #menu-item a:hover {
+            color: #ff5722;
+            transform: scale(1.05);
+        }
+
+        /* Carousel Styling */
+        .carousel {
+        position: relative;
+        width: 100%;
+        max-width: 1200px;
+        margin: 20px auto;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .carousel-images {
+        display: flex;
+        width: 100%; /* Ensuring space for 4 images */
+        animation: slide 16s infinite; /* Adjusted timing for better effect */
+    }
+    .carousel-images img {
+        width: 100%;
+        flex-shrink: 0;  /* Ensuring the images do not shrink */
+        height: 500px;
+        object-fit: cover;
+    }
+    @keyframes slide {
+        0%, 20% { transform: translateX(0); }
+        25%, 45% { transform: translateX(-100%); }
+        50%, 70% { transform: translateX(-200%); }
+        75%, 100% { transform: translateX(-300%); }
+    }
+        /* Section Styling */
+        section {
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #ff5722;
+        }
+        section p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #673ab7;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>SweetShop.com</h1>
+    </header>
+    
+    <!-- Navigation -->
+    <nav>
+        <form>
+            <input type="search" name="search" placeholder="Search your sweets here..." id="search">
+            <input type="submit" id="search-btn" value="Search">
+        </form>
+        <table id="menu-table">
+            <tr>
+                <td id="menu-item"><a href="#" target="_blank">Home</a></td>
+                <td id="menu-item"><a href="/sweets.html" target="_blank">Sweets</a></td>
+                <td id="menu-item"><a href="/bakeries.html" target="_blank">Bakeries</a></td>
+                <td id="menu-item"><a href="/about.html" target="_blank">About Us</a></td>
+                <td id="menu-item"><a href="/contact.html" target="_blank">Contact</a></td>
+            </tr>
+        </table>
+    </nav>
+
+    <!-- Carousel -->
+    <div class="carousel">
+        <div class="carousel-images">
+            <img src="img0.jpg" alt="Sweet 1">
+            <img src="img1.jpg" alt="Sweet 2">
+            <img src="img2.jpg" alt="Sweet 3">
+            <img src="img3.jpg" alt="Sweet 4">
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <section>
+        <h2>Welcome to SweetShop</h2>
+        <p>Explore the best sweets and bakery items from our world-renowned sweetshop. Enjoy exclusive flavors and unbeatable quality.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 SweetShop.com - All rights reserved.</p>
+    </footer>
+</body>
+</html>

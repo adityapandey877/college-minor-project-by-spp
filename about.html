@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SweetShop</title>
+    <style>
+        /* Reset and Body Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            overflow-x: hidden;
+        }
+
+        /* Header Styling */
+        header {
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #ff5722;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        /* Navbar Styling */
+        nav {
+            width: 100%;
+            background-color: #673ab7;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        nav form {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #search {
+            width: 70%;
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        #search-btn {
+            width: 20%;
+            height: 40px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        #search-btn:hover {
+            background-color: #45a049;
+        }
+        #menu-table {
+            width: 100%;
+            margin-top: 10px;
+        }
+        #menu-item {
+            text-align: center;
+            padding: 10px 0;
+            background-color: white;
+            border-radius: 5px;
+            margin: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        #menu-item a {
+            text-decoration: none;
+            color: #673ab7;
+            font-size: 18px;
+            font-weight: bold;
+            display: block;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        #menu-item a:hover {
+            color: #ff5722;
+            transform: scale(1.05);
+        }
+
+        /* About Section Styling */
+        .about-section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .about-section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #ff5722;
+        }
+        .about-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Card Styling */
+        .card-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin-top: 40px;
+        }
+        .card {
+            width: 300px;
+            height: 400px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card h3 {
+            margin: 10px 0;
+            font-size: 22px;
+            color: #673ab7;
+        }
+        .card p {
+            font-size: 16px;
+            color: #555;
+            padding: 10px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #673ab7;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>SweetShop.com</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <form>
+            <input type="search" name="search" placeholder="Search your sweets here..." id="search">
+            <input type="submit" id="search-btn" value="Search">
+        </form>
+        <table id="menu-table">
+            <tr>
+                <td id="menu-item"><a href="/index.html" target="_blank">Home</a></td>
+                <td id="menu-item"><a href="/sweets.html" target="_blank">Sweets</a></td>
+                <td id="menu-item"><a href="/bakeries.html" target="_blank">Bakeries</a></td>
+                <td id="menu-item"><a href="/about.html" target="_blank">About Us</a></td>
+                <td id="menu-item"><a href="/contact.html" target="_blank">Contact</a></td>
+            </tr>
+        </table>
+    </nav>
+
+    <!-- About Section -->
+    <div class="about-section">
+        <h2>About SweetShop</h2>
+        <p>Welcome to SweetShop, your one-stop destination for the finest and most delectable sweets and bakery items. Our shop has been serving customers for over 20 years, offering a wide variety of treats made with the highest quality ingredients. From traditional sweets to modern bakery creations, SweetShop guarantees freshness and unbeatable flavor. We strive to bring you the best of what the sweet world has to offer, with a commitment to excellence in every bite.</p>
+    </div>
+
+    <!-- Profile Card Section -->
+    <div class="card-container">
+        <div class="card">
+            <img src="/hmar-photo.jpg" alt="Surya Prakash Pandey">
+            <h3>Surya Prakash Pandey    </h3>
+            <p>Front End Developer Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, assumenda.  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo laudantium voluptatem sequi alias sit quasi. </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 SweetShop.com - All rights reserved.</p>
+    </footer>
+</body>
+</html>
